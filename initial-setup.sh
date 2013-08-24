@@ -6,7 +6,9 @@ if [[ $UID != 0 ]]; then
     echo "Please start the script as root or sudo!"
     exit 1
 fi
-apt-get -y install avahi-daemon
+apt-get update
+apt-get upgrade --yes
+apt-get --yes install avahi-daemon
 insserv avahi-daemon
 cp avahi-config /etc/avahi/services/multiple.service
 /etc/init.d/avahi-daemon restart
