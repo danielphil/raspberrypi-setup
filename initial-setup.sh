@@ -17,7 +17,7 @@ insserv avahi-daemon
 cp avahi-config /etc/avahi/services/multiple.service
 /etc/init.d/avahi-daemon restart
 
-# install nodejs
+# install nodejs into /usr/local/node-xxx
 mkdir /tmp/node
 pushd /tmp/node
 NODENAME=node-v0.10.17-linux-arm-pi
@@ -28,4 +28,5 @@ popd
 rm -rfv /tmp/node
 
 #add nodejs to path
+#there must be a nicer way of doing this...
 echo "export PATH=\$PATH:/usr/local/$NODENAME/bin" >> /home/pi/.bash_profile
