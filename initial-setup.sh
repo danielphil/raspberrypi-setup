@@ -48,7 +48,7 @@ echo "export PATH=\$PATH:/usr/local/phantomjs-1.9.0-linux-armv6l/bin" >> /home/p
 # install casperjs from git
 git clone git://github.com/n1k0/casperjs.git /usr/local/casperjs
 pushd /usr/local/casperjs
-git checkout tags/1.1-beta1
+git checkout tags/1.0.2
 popd
 
 # add casperjs to path
