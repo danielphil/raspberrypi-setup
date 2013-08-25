@@ -53,3 +53,6 @@ popd
 
 # add casperjs to path
 echo "export PATH=\$PATH:/usr/local/casperjs/bin" >> /home/pi/.bashrc
+
+# install mercurial
+apt-get install mercurial --yes
