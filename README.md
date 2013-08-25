@@ -9,5 +9,7 @@ This assumes that you've gone with the default username of 'pi'.
 * Installs avahi to make it easy to SSH into the Raspberry Pi by hostname via the magic of zeroconf networking. After
 install, you should be able to SSH using a hostname like `raspberrypi.local`.
 * Installs node.js
+* Installs PhantomJS 1.9
+* Installs casperjs 1.1 beta
 
 To run: `sudo ./initial-setup.sh`
